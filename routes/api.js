@@ -10,10 +10,11 @@ router.get('/ninjas',function(req, res, next){
   // });
 
   Ninja.geoNear(
-    {type:"Point"coordinates:[parseFloat(req.query.lng),parseFloat(req.query.lat)]},
+    {type:"Point",coordinates:[parseFloat(req.query.lng),parseFloat(req.query.lat)]},
     {maxDistance:100000,spherical:true}
-  }
-  );
+  ).then(function(ninjas){
+    res.send(ninjas);
+  });
 });
 // Add new ninja to database
 router.post('/ninjas',function(req, res,next){
