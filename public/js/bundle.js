@@ -2577,7 +2577,7 @@ var App = function (_React$Component) {
               'li',
               null,
               _react2.default.createElement(
-                _reactRouterDom.Link,
+                _reactRouterDom.NavLink,
                 { to: '/' },
                 'Home'
               )
@@ -2586,7 +2586,7 @@ var App = function (_React$Component) {
               'li',
               null,
               _react2.default.createElement(
-                _reactRouterDom.Link,
+                _reactRouterDom.NavLink,
                 { to: '/about' },
                 'About'
               )

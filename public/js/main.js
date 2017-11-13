@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  NavLink
 } from 'react-router-dom'
 const Home = require('../views/Home');
 const About = require('../views/About');
@@ -15,8 +15,8 @@ class App extends React.Component {
       <Router>
      <div>
        <ul>
-         <li><Link to="/">Home</Link></li>
-         <li><Link to="/about">About</Link></li>
+         <li><NavLink to="/">Home</NavLink></li>
+         <li><NavLink to="/about">About</NavLink></li>
       </ul>
 
        <hr/>
