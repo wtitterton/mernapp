@@ -9,6 +9,7 @@ import {
 const Header = require('../components/Header');
 const Home = require('../views/Home');
 const About = require('../views/About');
+const AddContent = require('../views/AddContent');
 
 class App extends React.Component {
   render()
@@ -19,6 +20,7 @@ class App extends React.Component {
      <Header />
       <Route exact path="/" component={Home}/>
        <Route path="/about" component={About}/>
+       <Route path="/AddContent" component={AddContent}/>
       </div>
    </Router>
 
