@@ -1,9 +1,30 @@
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#app-wrap
+{
+  width:100%;
+  max-width:1920px;
+  margin: 0 auto;
+  background: #FEFDFB;
+  
+}
+
+section
+{
+  padding: 30px 0;
+}
 
 .vertical-align
 {
-  position: relative;
+  position: absolute;
   top:50%;
-  transform: translateY(-50%);
+  left:50%;
+  transform: translate(-50%, -50%);
 }
 
 .clearfix::after
@@ -13,6 +34,15 @@
   clear: both;
 }
 
+header
+{
+    background: #034484;
+}
+
+header nav
+{
+    margin:0 auto;
+}
 ul
 {
   list-style: none;
@@ -30,13 +60,99 @@ nav ul li
   padding: 20px 20px;
 }
 
+nav ul li a
+{
+  color:#fff;
+}
+
 a
 {
   text-decoration: none;
 }
 
 
-header
+/* search form styles */
+#search
 {
-  background:#33B2FF;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30px;
+}
+
+#search input
+{
+  width:400px;
+  height: 38px;
+  border: none;
+  background: #eee;
+  padding-left: 8px;
+  border-radius: 3px;
+}
+
+#search button
+{
+  width: 110px;
+  height: 38px;
+  background:#A9C9A4 ;
+  outline: none;
+  border: none;
+  position: relative;
+  top:1px;
+  cursor: pointer;
+}
+
+#search button::before
+{
+  content: '';
+  border:10px solid;
+  border-color:  transparent #A9C9A4  transparent transparent;
+  position: absolute;
+  top:8px;
+  left:-18px;
+}
+.fa.fa-search
+{
+  color:#fff;
+  font-size: 20px;
+}
+
+/* card styles */
+
+.card
+{
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+  min-height: 300px;
+  position: relative;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  background: #fff;
+}
+
+
+
+.round-img
+{
+  width:120px;
+  height: 120px;
+  border-radius: 50% ;
+  margin: 0 auto;
+}
+
+.card h3
+{
+    text-align: center;
+    margin-top:15px;
+}
+
+.btn
+{
+
+}
+
+/* footer styles */
+footer
+{
+  min-height: 150px;
+  background:#A9C9A4;
 }

@@ -14,19 +14,21 @@ render()
 {
   return (
     <header className="header">
-      <div className="container">
-        <div className="row">
-          <h1 className="col-6">Logo</h1>
 
-          <nav className="col-6">
+        <div className="row">
+
+
+          <nav className="col-12">
              <ul>
                 <li><NavLink to="/">Home</NavLink></li>
                 <li><NavLink to="/about">About</NavLink></li>
-                <li><NavLink to="/AddContent">Add Content</NavLink></li>
+                <li><NavLink to="/AddContent">Find Organisation</NavLink></li>
+                <li><NavLink to="/AddContent">Facts</NavLink></li>
+                <li><NavLink to="/AddContent">Tips and Advice</NavLink></li>
              </ul>
            </nav>
          </div>
-      </div>
+
     </header>
   );
 }

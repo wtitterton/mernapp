@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 
 const Header = require('../components/Header');
+const Footer = require('../components/footer');
 const Home = require('../views/Home');
 const About = require('../views/About');
 const AddContent = require('../views/AddContent');
@@ -17,10 +18,13 @@ class App extends React.Component {
     return (
     <Router>
      <div>
-     <Header />
-      <Route exact path="/" component={Home}/>
-       <Route path="/about" component={About}/>
-       <Route path="/AddContent" component={AddContent}/>
+       <Header />
+       <div id="app-wrap">
+          <Route exact path="/" component={Home}/>
+           <Route path="/about" component={About}/>
+           <Route path="/AddContent" component={AddContent}/>
+        </div>
+        <Footer />
       </div>
    </Router>
 

@@ -1,0 +1,44 @@
+.slick-slider,.slick-slide
+ {
+  overflow: hidden;
+  width: 100%;
+  max-height: 700px;
+}
+
+.slick-slide img
+{
+  width: 100%;
+
+}
+.slick-prev
+{
+    left: 20px;
+    z-index: 90;
+
+}
+.slick-next
+{
+  right: 20px;
+}
+.slick-dots
+{
+  bottom: 50px;
+  margin-left: 0; /* Fixes the visible horizontal scroll bar */
+  z-index: 90;
+}
+
+
+.slick-dots li.slick-active button:before{opacity:.75;color:#A9C9A4}
+.slick-dots li button:before
+{
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+}
+
+.slide1
+{
+
+
+}

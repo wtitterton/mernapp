@@ -1,18 +1,6 @@
 const mongoose = require('mongoose');
+require('mongoose-type-url');
 const Schema = mongoose.Schema;
-const OrganisationSchema = new Schema({
-  name:{
-    type:string
-  },
-  contact:{
-    type:number
-  },
-  email:
-  {
-    type:String
-  }
-})
-
 
 const DisorderSchema = new Schema({
   name:{
@@ -24,9 +12,11 @@ const DisorderSchema = new Schema({
     required:true
 
   },
-  organisation:{
-    fields: [{ type: [OrganisationSchema], required: true }]]
+
+  imgsrc:{
+    type:String
   }
+
 });
 
 const Disorder = mongoose.model('disorder',DisorderSchema );
