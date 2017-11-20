@@ -37,8 +37,18 @@
     font-size: 20px;
 }
 
-.slide1
+.message-con
 {
+  width:80%;
+  margin:0 auto;
+}
 
-
+.message
+{
+  position: absolute;
+  top:30%;
+  padding: 20px;
+  color:#fff;
+  max-width: 600px;
+  background: #A9C9A4;
 }

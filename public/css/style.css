@@ -11,7 +11,42 @@
   max-width:1920px;
   margin: 0 auto;
   background: #FEFDFB;
-  
+}
+
+.color-heading
+{
+  color:#ff5499;
+}
+
+/* btn styles */
+.btn-con
+{
+  margin-top: 8px;
+}
+
+.btn
+{
+  padding: 5px 10px;
+  margin-right:10px;
+  cursor: pointer;
+  background: #A9C9A4;
+  border:1px solid #A9C9A4;
+  outline: none;
+  color:#fff;
+}
+
+.btn-pink
+{
+  background:#ff5499;
+  border: 1px solid #ff5499;
+}
+
+.btn a
+{
+  color:#fff;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
 }
 
 section
@@ -118,7 +153,7 @@ a
 
 /* card styles */
 
-.card
+.card,.fact,.organisation
 {
   float: left;
   margin: 0.5rem 2%;
@@ -128,8 +163,6 @@ a
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   background: #fff;
 }
-
-
 
 .round-img
 {
@@ -145,9 +178,62 @@ a
     margin-top:15px;
 }
 
-.btn
-{
 
+
+/* disorder page styles */
+.main-content
+{
+  padding: 20px 0;
+  background:#f8f8f8;
+}
+
+.section-title,.info-section p
+{
+  margin: 0 auto;
+}
+.info-section
+{
+  padding: 30px;
+  margin:0px auto 20px auto;
+  background: #fff;
+}
+
+.fact
+{
+  padding: 30px;
+  min-height: 100px;
+  color:#fff;
+    background:#ff5499;
+}
+
+.fact-number
+{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top:10px;
+  left:10px;
+  border-radius: 50%;
+  line-height: 45px;
+  background: ;
+  text-align: center;
+  color:#fff;
+  font-weight: bold;
+  background:#ff69b4;
+  border:1px dashed #fff;
+}
+
+p.the-fact
+{
+  margin-top: 45px;
+  color:#fff;
+}
+
+
+.organisation
+{
+  box-shadow: none;
+  min-height: 0px;
 }
 
 /* footer styles */

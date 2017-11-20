@@ -16,9 +16,28 @@ class SliderExample extends React.Component {
 
 		return (
 			<Slider {...settings} >
-				<div  className="slide1"></div>
-				<div><img src='../images/slide2.jpg' /></div>
-				<div><img src='http://placekitten.com/g/400/200' /></div>
+
+				<div  className="slide1">
+					<img src='../images/slide1.jpg' />
+					<div className="message-con">
+						<h1 className="message">“Never apologize to others for
+						their misunderstanding of who you are.”</h1>
+					</div>
+				</div>
+				<div>
+					<img src='../images/slide2.jpg' />
+					<div className="message-con">
+						<h1 className="message">“Never apologize to others for
+						their misunderstanding of who you are.”</h1>
+					</div>
+				</div>
+				<div  className="slide1">
+					<img src='../images/slide1.jpg' />
+					<div className="message-con">
+						<h1 className="message">“Never apologize to others for
+						their misunderstanding of who you are.”</h1>
+					</div>
+				</div>
 			</Slider>
 			)
 	}

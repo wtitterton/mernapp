@@ -15,7 +15,7 @@ class Home extends React.Component {
             <div className="row">
               <form id="search">
                 <input type="text" placeholder="search mental disorder"/>
-                <button className="btn" value="search"><i class="fa fa-search" aria-hidden="true"></i></button>
+                <button className="btn" value="search"><i className="fa fa-search" aria-hidden="true"></i></button>
               </form>
             </div>
             <div className="row">
